@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(../font/sc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../font/sc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(../font/sb.ttf) format('truetype');
+}
+
+body {
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  line-height: 1.1;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #333;
+  text-decoration: none;
+}
+
+.l-cover {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 30%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.l-cover header {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 50px 10%;
+}
+
+.l-cover .header-avatar {
+  margin-bottom: 5px;
+}
+
+.l-cover .header-avatar img {
+  border-radius: 999px;
+  border: 4px solid #fff;
+}
+
+.l-cover ul {
+  padding: 0;
+}
+
+.l-cover .description {
+  margin: 10px;
+  line-height: 1.4;
+}
+
+.l-cover .social-links li {
+  display: inline-block;
+}
+
+.l-cover .social-links li a {
+  color: #666;
+}
+
+.l-cover .social-links li::after {
+  content:" \00b7 ";
+}
+
+.l-cover .social-links li:last-child::after {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.l-content {
+  margin-left:30%;
+}
+
+.l-content > .inner {
+  padding: 30px 85px;
+  max-width: 810px;
+}
+
+.article-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+article .article-title {
+  text-align: center;
+}
+
+article .article-meta {
+  text-align: center;
+}
+
+.article-title .article-subtitle {
+  display: block;
+  font-size: 0.6em;
+  color: #999;
+  line-height: 2em;
+  font-weight: normal;
+}
+
+.article-meta {
+  color: #b3b3b1;
+  margin-bottom: 10px;
+}
+
+.article-body {
+  font-size: 1em;
+  line-height: 1.8;
+  padding: 10px 0;
+}
+
+.article-body blockquote p {
+  margin-bottom: 0;
+}
+
+.article-body img.fill {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.article-body img.center {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.article-body .left {
+  float: left;
+  width: 61%;
+}
+
+.article-body aside.left,
+.article-body aside.right {
+  width: 39%;
+  overflow: hidden;
+}
+
+.article-body .right {
+  width: 61%;
+}
+
+.article-body p {
+  margin: 0;
+}
+
+.right {
+  float: right;
+}
+
+.description a,
+.article-body a,
+.read-more a {
+  color: #007998;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+.description a:hover,
+.description a:focus,
+.description a:active,
+.article-body a:hover,
+.article-body a:focus,
+.article-body a:active {
+  color: rgba(0, 121, 152, 0.5);
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot");
+  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: #007998;}
+::-moz-selection 	{background: #007998;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: #007998;}
+
+  /*		Tablet Layout: 768px.
+  Gutters: 24px.
+  Outer margins: 28px.
+  Inherits styles from: Default Layout.
+  -----------------------------------------------------------------
+  cols    1     2      3      4      5      6      7      8
+  px      68    160    252    344    436    528    620    712    */
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .l-cover header {
+      padding: 50px 10px;
+    }
+    .l-content > .inner {
+      padding: 50px 40px;
+    }
+  }
+
+
+
+  /*		Mobile Layout: 320px.
+  Gutters: 24px.
+  Outer margins: 34px.
+  Inherits styles from: Default Layout.
+  ---------------------------------------------
+  cols    1     2      3
+  px      68    160    252    */
+
+  @media only screen and (max-width: 767px) {
+    .l-cover {
+      position: static;
+      width: auto;
+      border: none;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .l-cover header {
+      position: static;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 50px 10%;
+    }
+    .l-content {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .l-content > .inner {
+      padding: 50px 25px;
+      width: auto;
+    }
+    .article-body {
+      font-size: 1em;
+    }
+
+    .article-title {
+      font-size: 2em;
+    }
+
+    .article-body .left {
+      width: 50%;
+    }
+
+    .article-body aside.left,
+    .article-body aside.right {
+      width: 50%;
+    }
+
+    .article-body .right {
+      width: 50%;
+    }
+    .article-share .about-blog > p {
+      margin-bottom: 4px;
+    }
+    .article-share .about-blog,
+    .article-share .about-blog > p,
+    .article-share .about-blog > a,
+    .article-share .about-blog > iframe {
+      float: none;
+    }
+    .article-share .share {
+      margin-top: 10px;
+      float: none;
+    }
+  }
+
+
+
+  /*		Wide Mobile Layout: 480px.
+  Gutters: 24px.
+  Outer margins: 22px.
+  Inherits styles from: Default Layout, Mobile Layout.
+  ------------------------------------------------------------
+  cols    1     2      3      4      5
+  px      68    160    252    344    436    */
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .l-content > .inner {
+      padding: 50px 25px;
+    }
+    .article-share .about-blog,
+    .article-share .about-blog > a {
+      float: left;
+    }
+    .article-share .share {
+      margin-top: 0;
+      float: right;
+    }
+  }

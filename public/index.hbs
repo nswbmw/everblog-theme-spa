@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{$blog.title}}</title>
+    <link rel='stylesheet'  href='public/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='public/css/github-markdown.css' type='text/css' media='all' />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <section class="l-cover">
+    <header id="banner" class="body">
+      <div class="header-avatar"><a href="{{$blog.url}}"><img src="{{$blog.author.avatar}}" width="64" height="64" alt="{{$blog.author.name}}" /></a></div>
+      <h1 class="site-name"><a href="{{$blog.url}}">{{$blog.author.name}}</a></h1>
+      <p class="description">{{$blog.author.description}}<br><br><br></p>
+      <ul class="social-links">
+        {{#each $blog.social}}
+        <li><a href="{{this}}">{{@key}}</a></li>
+        {{/each}}
+      </ul>
+    </header>
+  </section>
+  <section class="l-content">
+    <div class="inner">
+      {{#each posts}}
+      <article class="markdown-body" id="{{title}}">
+        <header>
+          <a href="#{{title}}">
+            <h2 class="article-title">
+              {{title}}
+            </h2>
+          </a>
+          <p class="article-meta">
+          {{../$blog.author.name}} | 
+          {{#date updated}}{{/date}} | 
+          {{#each tags}}{{this}} {{/each}}
+          </p>
+        </header>
+        <div class="article-body">
+          {{{content}}}
+        </div>
+      </article>
+      {{/each}}
+      <div class="copyright">Powered by <a href="http://everblog.io">everblog</a></div>
+    </div>
+  </section>
+</body>
+</html>
