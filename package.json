@@ -8,7 +8,7 @@
     "spa"
   ],
   "dependencies": {
-    "everblog-adaptor-spa": "^0.2.0"
+    "everblog-adaptor-spa": "^0.3.1"
   },
   "author": {
     "name": "nswbmw",
