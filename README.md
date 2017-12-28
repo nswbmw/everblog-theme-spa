@@ -2,19 +2,20 @@
 
 SPA theme for [everblog-adaptor-spa](https://github.com/everblogjs/everblog-adaptor-spa).
 
-### _config.yml
+### Usage
 
-Required fields:
+1. create `_config.yml`
 
+![](./public/images/1.png)
+
+2. create `xxx.md`
+
+![](./public/images/2.png)
+
+3. Start everblog
+
+```sh
+DEBUG=* everblog start
 ```
-title: everblog
-url: http://everblog.io
-author:
-  name: nswbmw
-  description: No fun, no Node.
-  avatar: https://avatars.githubusercontent.com/u/4279697?v=3&s=100
-social:
-  GitHub: https://github.com/nswbmw
-  Twitter: https://twitter.com/nswbmw
-  Facebook: https://www.facebook.com/nswbmw1992
-```
+
+![](./public/images/3.png)

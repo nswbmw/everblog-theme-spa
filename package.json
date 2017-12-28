@@ -1,6 +1,6 @@
 {
   "name": "everblog-theme-spa",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SPA theme for [everblog-adaptor-spa](https://github.com/everblogjs/everblog-adaptor-spa).",
   "main": "index",
   "keywords": [
