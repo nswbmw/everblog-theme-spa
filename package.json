@@ -1,21 +1,22 @@
 {
   "name": "everblog-theme-spa",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SPA theme for [everblog-adaptor-spa](https://github.com/everblogjs/everblog-adaptor-spa).",
   "main": "index",
   "keywords": [
     "evernote",
+    "theme",
     "spa"
   ],
   "dependencies": {
-    "everblog-adaptor-spa": "^0.3.1"
+    "everblog-adaptor-spa": "^0.4.0"
   },
   "author": {
     "name": "nswbmw",
-    "email": "nswbmw1992@gmail.com"
+    "url": "https://github.com/nswbmw"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   },
   "license": "MIT",
   "repository": {

@@ -24,18 +24,16 @@
   </section>
   <section class="l-content">
     <div class="inner">
-      {{#each posts}}
-      <article class="markdown-body" id="{{title}}">
+      {{#each notes}}
+      <article class="markdown-body" id="{{guid}}">
         <header>
-          <a href="#{{title}}">
-            <h2 class="article-title">
+          <a href="#{{guid}}">
+            <h1 class="article-title">
               {{title}}
-            </h2>
+            </h1>
           </a>
           <p class="article-meta">
-          {{../$blog.author.name}} | 
-          {{#date updated}}{{/date}} | 
-          {{#each tags}}{{this}} {{/each}}
+          {{#date created}}{{/date}}
           </p>
         </header>
         <div class="article-body">
@@ -43,7 +41,7 @@
         </div>
       </article>
       {{/each}}
-      <div class="copyright">Powered by <a href="http://everblog.io">everblog</a></div>
+      <div class="copyright">Powered by <a href="https://github.com/everblogjs/everblog">everblog</a></div>
     </div>
   </section>
 </body>
