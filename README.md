@@ -8,9 +8,10 @@ SPA theme for [everblog-adaptor-spa](https://github.com/everblogjs/everblog-adap
 
 ![](./public/images/1.png)
 
-2. create `xxx.md`
+2. create `xxx.md` or `xxx`
 
 ![](./public/images/2.png)
+![](./public/images/3.png)
 
 3. Start everblog
 
@@ -18,4 +19,5 @@ SPA theme for [everblog-adaptor-spa](https://github.com/everblogjs/everblog-adap
 DEBUG=* everblog start
 ```
 
-![](./public/images/3.png)
+![](./public/images/4.png)
+![](./public/images/5.png)
